@@ -1,0 +1,53 @@
+.profile-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #000;
+}
+
+.profile-card {
+max-width: 550px;
+background-color: #222;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-image {
+position: relative;
+}
+
+.profile-image img {
+width: 100%;
+display: block;
+transition: transform 0.3s ease-in-out;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+.profile-info:hover {
+    transform: scale(0.9);
+}
+
+.profile-info {
+padding: 20px;
+color: #fff;
+}
+
+.profile-info h1 {
+margin-top: 0;
+}
+
+.profile-info p {
+margin: 10px 0;
+}
+
+.profile-info h1 {
+display: inline-block;
+white-space: nowrap; /* Evita quebrar a linha */
+overflow: hidden; /* Evita que o texto ultrapasse o contêiner */
+text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
+}
